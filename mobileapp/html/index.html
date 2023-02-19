@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <title>Mobile</title>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <h2>Creative scroll bar</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, nam nobis? Nulla incidunt eaque earum ullam necessitatibus veniam aliquam, vel consectetur nisi error. Veniam maxime atque suscipit ut voluptatibus? Porro quisquam exercitationem omnis minima temporibus facere eius qui voluptatum eveniet laudantium alias consectetur rerum non dicta sit, suscipit magnam quas eaque sunt cum ut ea repellat odio minus. Veritatis, adipisci natus excepturi sit tenetur laborum, dolorem architecto dolor atque neque at dicta cumque labore ea hic minus veniam. Molestias sint id eos voluptatibus ipsa nostrum commodi provident blanditiis quos, vero, quam labore deleniti error, quo voluptas exercitationem accusamus est ullam eaque at delectus. Magni nisi natus fugit in sapiente quis quod. Sed saepe quod sit sunt mollitia ipsam maxime quibusdam repudiandae distinctio eligendi, omnis, nesciunt odit explicabo blanditiis ullam quasi sapiente! Nisi mollitia reiciendis recusandae, eum incidunt at architecto quod ut nemo. Quidem minima accusamus quam quae at repudiandae voluptates sint, quis laudantium recusandae molestiae voluptatem delectus illo voluptatibus sit reprehenderit repellat? Harum asperiores molestias nam dolorum impedit voluptas atque iusto animi non eligendi illum maiores placeat ea laboriosam, totam fuga expedita, alias odit! Debitis ipsum laborum commodi impedit totam labore officiis. Officiis, illum asperiores tempore quasi iusto necessitatibus dolores.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, nam nobis? Nulla incidunt eaque earum ullam necessitatibus veniam aliquam, vel consectetur nisi error. Veniam maxime atque suscipit ut voluptatibus? Porro quisquam exercitationem omnis minima temporibus facere eius qui voluptatum eveniet laudantium alias consectetur rerum non dicta sit, suscipit magnam quas eaque sunt cum ut ea repellat odio minus. Veritatis, adipisci natus excepturi sit tenetur laborum, dolorem architecto dolor atque neque at dicta cumque labore ea hic minus veniam. Molestias sint id eos voluptatibus ipsa nostrum commodi provident blanditiis quos, vero, quam labore deleniti error, quo voluptas exercitationem accusamus est ullam eaque at delectus. Magni nisi natus fugit in sapiente quis quod. Sed saepe quod sit sunt mollitia ipsam maxime quibusdam repudiandae distinctio eligendi, omnis, nesciunt odit explicabo blanditiis ullam quasi sapiente! Nisi mollitia reiciendis recusandae, eum incidunt at architecto quod ut nemo. Quidem minima accusamus quam quae at repudiandae voluptates sint, quis laudantium recusandae molestiae voluptatem delectus illo voluptatibus sit reprehenderit repellat? Harum asperiores molestias nam dolorum impedit voluptas atque iusto animi non eligendi illum maiores placeat ea laboriosam, totam fuga expedita, alias odit! Debitis ipsum laborum commodi impedit totam labore officiis. Officiis, illum asperiores tempore quasi iusto necessitatibus dolores.</p>
+        <br/>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, nam nobis? Nulla incidunt eaque earum ullam necessitatibus veniam aliquam, vel consectetur nisi error. Veniam maxime atque suscipit ut voluptatibus? Porro quisquam exercitationem omnis minima temporibus facere eius qui voluptatum eveniet laudantium alias consectetur rerum non dicta sit, suscipit magnam quas eaque sunt cum ut ea repellat odio minus. Veritatis, adipisci natus excepturi sit tenetur laborum, dolorem architecto dolor atque neque at dicta cumque labore ea hic minus veniam. Molestias sint id eos voluptatibus ipsa nostrum commodi provident blanditiis quos, vero, quam labore deleniti error, quo voluptas exercitationem accusamus est ullam eaque at delectus. Magni nisi natus fugit in sapiente quis quod. Sed saepe quod sit sunt mollitia ipsam maxime quibusdam repudiandae distinctio eligendi, omnis, nesciunt odit explicabo blanditiis ullam quasi sapiente! Nisi mollitia reiciendis recusandae, eum incidunt at architecto quod ut nemo. Quidem minima accusamus quam quae at repudiandae voluptates sint, quis laudantium recusandae molestiae voluptatem delectus illo voluptatibus sit reprehenderit repellat? Harum asperiores molestias nam dolorum impedit voluptas atque iusto animi non eligendi illum maiores placeat ea laboriosam, totam fuga expedita, alias odit! Debitis ipsum laborum commodi impedit totam labore officiis. Officiis, illum asperiores tempore quasi iusto necessitatibus dolores.</p>
+    </section>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalheight = document.body.scrollHeight - window.innerHeight
+        window.onscroll = function(){
+            let progressheight = (window.pageYOffset / totalheight) * 100;
+            progress.style.height = progressheight + '%';
+        }
+    </script>
+</body>
+</html>
